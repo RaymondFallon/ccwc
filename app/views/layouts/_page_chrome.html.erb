@@ -1,0 +1,23 @@
+<body class="chrome-context -col lg:-fixed"
+      data-controller="pmacs-collapsible"
+      data-target="pmacs-collapsible.context">
+<a href="#content"
+   id="skip-nav"
+   class="sr-only sr-only-focusable text-center chrome"
+   style="background-color: var(--secondary); color: var(--white);">
+  Skip to main content
+</a>
+
+<%= render 'header' %>
+
+<main id="pmacsMain" class="chrome-context -col lg:-row lg:-fixed flex-wrap lg:flex-no-wrap">
+
+  <article id="content"
+           class="p-4"
+           tabindex="-1">
+    <%= yield %>
+  </article>
+
+</main>
+
+</body>
