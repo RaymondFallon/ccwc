@@ -22,7 +22,7 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@media (min-width: 544px) {
   .sm\:.chrome-context {
     display: flex;
     margin: 0;
@@ -48,7 +48,7 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+@media (min-width: 768px) {
   .md\:.chrome-context {
     display: flex;
     margin: 0;
@@ -74,7 +74,7 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+@media (min-width: 992px) {
   .lg\:.chrome-context {
     display: flex;
     margin: 0;
@@ -100,7 +100,7 @@
   }
 }
 
-@include media-breakpoint-up(xl) {
+@media (min-width: 1200px) {
   .xl\:.chrome-context {
     display: flex;
     margin: 0;
