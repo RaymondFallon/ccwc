@@ -1,0 +1,8 @@
+#emergency-exit {
+  background-color: lighten(red, 20%);
+
+}
+
+#emergency-exit > * {
+  display: inline;
+}

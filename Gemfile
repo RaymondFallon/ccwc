@@ -14,6 +14,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 # Added by developer
+gem 'font-awesome-rails'
 gem 'haml-rails'
 
 # Use Capistrano for deployment
