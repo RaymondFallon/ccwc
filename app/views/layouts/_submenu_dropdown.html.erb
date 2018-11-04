@@ -1,0 +1,12 @@
+<div class="submenu-dropdown">
+  <ul class="submenu">
+    <% locals[:subcategories].each do |item| %>
+      <li>
+        <a href="<%= item[:anchor] %>"><%= item[:title] %></a>
+      </li>
+    <% end %>
+<!--    <li>Basic Info</li>-->
+<!--    <li>Contact Us</li>-->
+<!--    <li>The CCWC Story</li>-->
+  </ul>
+</div>
