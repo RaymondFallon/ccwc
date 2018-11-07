@@ -2,13 +2,10 @@
   <ul class="submenu">
     <% locals[:subcategories].each do |item| %>
       <a href="<%= item[:anchor] %>">
-        <li>
+        <li class="submenu-title">
           <%= item[:title] %>
         </li>
       </a>
     <% end %>
-<!--    <li>Basic Info</li>-->
-<!--    <li>Contact Us</li>-->
-<!--    <li>The CCWC Story</li>-->
   </ul>
 </div>

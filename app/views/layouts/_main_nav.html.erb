@@ -15,14 +15,14 @@
       }%>
     </li>
     <li class="nav-item-with-dropdown">
-      <a href="#" class="nav-category-title">Get Informed</a>
+      <a href="#" class="nav-category-title">Get Informed.</a>
       <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
           {title: 'Client Rights', anchor: '#'},
           {title: 'Our Publications', anchor: '#'}
       ] }%>
     </li>
     <li class="nav-item-with-dropdown">
-      <a href="#" class="nav-category-title">Get Involved</a>
+      <a href="#" class="nav-category-title">Get Involved.</a>
       <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
           {title: 'Dessert Night', anchor: '#'},
           {title: 'Employment', anchor: '#'},
@@ -32,6 +32,15 @@
           {title: 'Training Program on Domestic Violence', anchor: '#'}
       ] }%>
     </li>
-    <li id="get-help-btn" class="btn btn-warning">Get Help</li>
+    <li class="nav-item-with-dropdown">
+      <a href="#" class="nav-category-title">Get Help.</a>
+      <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
+          {title: '24/7 Hotline', anchor: '#'},
+          {title: 'Emergency Safe House', anchor: '#'},
+          {title: "Children's Programs (PALS)", anchor: '#'},
+          {title: 'Other Resources', anchor: '#'}
+      ] }%>
+    </li>
+<!--    <li id="get-help-btn" class="btn btn-warning"></li>-->
   </ul>
 </nav>
