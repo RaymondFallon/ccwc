@@ -1,4 +1,18 @@
+#ccwc-header {
+  background-color: lightgrey;
+  color: purple;
+}
+
+#ccwc-title{
+  font-size: 3.5rem;
+}
+
+#ccwc-subtitles {
+  font-weight: 200;
+}
+
 #main-nav-list {
+  flex-wrap: wrap;
 
   & > li {
     display: inline;
@@ -18,7 +32,9 @@
 }
 
 .nav-category-title {
-  color: black;
+  color: purple;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .submenu-dropdown {
@@ -39,11 +55,16 @@
 
 .nav-item-with-dropdown:hover,
 .nav-item-with-dropdown:focus-within {
-  background-color: dimgrey;
+  background-color: darken(dimgrey, 20%);
   color: white;
 
   .nav-category-title {
     color: white;
+  }
+
+  .nav-category-title:hover,
+  .nav-category-title:focus-within {
+    color: gold;
   }
 
   & > .submenu-dropdown {
@@ -62,7 +83,7 @@
     a:focus-within li {
       background-color: darken(dimgrey, 20%);
       //border-radius: 0 5px 0 0;
-      color: white;
+      color: gold;
     }
 
     a:first-of-type li:hover,
