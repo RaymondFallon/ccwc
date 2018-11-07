@@ -1,6 +1,10 @@
 #ccwc-header {
   background-color: lightgrey;
   color: purple;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 #ccwc-title{
@@ -13,22 +17,18 @@
 
 #main-nav-list {
   flex-wrap: wrap;
+}
 
-  & > li {
-    display: inline;
-    padding: .5rem 1rem .5rem 1rem;
-    margin: .5rem;
-    border-radius: 5px 5px 0 0;
-  }
+.nav-item-with-dropdown {
+  display: inline;
+  padding: .5rem 1rem .5rem 1rem;
+  margin: .5rem;
+  border-radius: 5px 5px 0 0;
+}
 
-  & > li:last-of-type {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
+.nav-item-with-dropdown:last-of-type {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .nav-category-title {
