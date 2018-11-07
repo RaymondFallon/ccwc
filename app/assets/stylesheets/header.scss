@@ -1,16 +1,31 @@
-#main-nav-list > li {
-  display: inline;
-  padding: 1rem;
+#main-nav-list {
+
+  & > li {
+    display: inline;
+    padding: .5rem 1rem .5rem 1rem;
+    margin: .5rem;
+    border-radius: 5px 5px 0 0;
+  }
+
+  & > li:last-of-type {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
 
-#main-nav-list > li:last-of-type {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+.nav-category-title {
+  color: black;
 }
 
 .submenu-dropdown {
   display: none;
   margin-left: -1em;
+  margin-top: .5em;
+  border-radius: 0 5px 5px 5px;
 }
 
 .submenu {
@@ -18,13 +33,18 @@
   padding-left: 0;
 
   li {
-    padding: 1.5em;
+    padding: 1em 1em 1em 1.5em;
   }
 }
 
-.nav-item-with-dropdown:hover {
+.nav-item-with-dropdown:hover,
+.nav-item-with-dropdown:focus-within {
   background-color: dimgrey;
   color: white;
+
+  .nav-category-title {
+    color: white;
+  }
 
   & > .submenu-dropdown {
     display: block;
@@ -32,11 +52,31 @@
     list-style-type: none;
 
     background-color: dimgrey;
-    color: white;
+    color: white !important;
 
-    li:hover {
+    a {
+      color: white;
+    }
+
+    li:hover,
+    a:focus-within li {
       background-color: darken(dimgrey, 20%);
+      //border-radius: 0 5px 0 0;
+      color: white;
+    }
+
+    a:first-of-type li:hover,
+    a:first-of-type:focus-within li {
+      border-radius: 0 5px 0 0;
+    }
+
+    a:last-of-type li:hover,
+    a:last-of-type:focus-within li {
+      border-radius: 0 0 5px 5px;
     }
   }
 }
 
+#get-help-btn {
+  border-radius: .25em !important;
+}

@@ -3,15 +3,35 @@
   <ul id="main-nav-list"
       class="flex flex-row align-items-center mb-0 mr-2">
     <li class="nav-item-with-dropdown">
-      About Us
+      <a href="#" class="nav-category-title">About Us</a>
+      <%= render 'layouts/submenu_dropdown', locals: {
+          subcategories: [
+            {title: 'Basic Info', anchor: '#'},
+            {title: 'Contact Us', anchor: '#'},
+            {title: 'The CCWC Story', anchor: '#'},
+            {title: 'Advisory Board', anchor: '#'},
+            {title: 'NJAC', anchor: '#'}
+          ]
+      }%>
+    </li>
+    <li class="nav-item-with-dropdown">
+      <a href="#" class="nav-category-title">Get Informed</a>
       <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
-          {title: 'Basic Info', anchor: '#'},
-          {title: 'Contact Us', anchor: '#'},
-          {title: 'The CCWC Story', anchor: '#'}
+          {title: 'Client Rights', anchor: '#'},
+          {title: 'Our Publications', anchor: '#'}
       ] }%>
     </li>
-    <li>Get Informed</li>
-    <li>Get Involved</li>
-    <li class="btn btn-warning">Get Help</li>
+    <li class="nav-item-with-dropdown">
+      <a href="#" class="nav-category-title">Get Involved</a>
+      <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
+          {title: 'Dessert Night', anchor: '#'},
+          {title: 'Employment', anchor: '#'},
+          {title: 'Student Internships', anchor: '#'},
+          {title: 'DVRT Volunteers', anchor: '#'},
+          {title: 'Wall of Pledges', anchor: '#'},
+          {title: 'Training Program on Domestic Violence', anchor: '#'}
+      ] }%>
+    </li>
+    <li id="get-help-btn" class="btn btn-warning">Get Help</li>
   </ul>
 </nav>
