@@ -21,14 +21,14 @@
 
 .nav-item-with-dropdown {
   display: inline;
-  padding: .5rem 1rem .5rem 1rem;
-  margin: .5rem;
   border-radius: 5px 5px 0 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .nav-item-with-dropdown:last-of-type {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-color: gold;
   border: 1px solid purple;
   border-radius: .25em;
@@ -52,8 +52,8 @@
 
 .submenu-dropdown {
   display: none;
-  margin-left: -1em;
-  margin-top: .5em;
+  //margin-left: -1em;
+  margin-top: 1em;
   border-radius: 0 5px 5px 5px;
 }
 
@@ -113,4 +113,10 @@
       border-radius: 0 0 5px 5px;
     }
   }
+}
+
+.nav-category-title {
+  padding: 1em;
+  //margin: .5rem 1rem .5rem 1rem;
+  //margin: .5rem;
 }
