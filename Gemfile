@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'pg' # There is no db but this is needed for the Heroku deploy
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
