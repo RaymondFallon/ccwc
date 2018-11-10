@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 # Added by developer
 gem 'font-awesome-rails'
 gem 'haml-rails'
+gem 'jquery-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

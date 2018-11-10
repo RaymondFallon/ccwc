@@ -1,8 +1,9 @@
-#emergency-exit {
+.emergency-exit {
+  cursor: pointer;
   background-color: lighten(red, 20%);
   border: 2px dotted black;
 }
 
-#emergency-exit > * {
+#exit-top > * {
   display: inline;
 }
