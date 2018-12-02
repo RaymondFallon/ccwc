@@ -4,6 +4,10 @@
   border: 2px dotted black;
 }
 
+#exit-top {
+  flex: 0 0 auto;
+}
+
 #exit-top > * {
   display: inline;
 }
