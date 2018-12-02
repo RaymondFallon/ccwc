@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   root to: 'static_pages#welcome'
 
+  get :about_us, to: 'static_pages#about_us', as: 'about_us'
+
   get :exit, to: 'static_pages#exit', as: :exit
 end
