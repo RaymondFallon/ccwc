@@ -1,12 +1,11 @@
 class StaticPagesController < ApplicationController
-  def welcome
-  end
+  def welcome; end
 
-  def about_us
-  end
+  def about_us; end
 
-  def ccwc_story
-  end
+  def advisory_board; end
+
+  def ccwc_story; end
 
   def exit
     session[:exited] = true

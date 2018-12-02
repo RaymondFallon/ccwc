@@ -3,8 +3,9 @@ Rails.application.routes.draw do
 
   root to: 'static_pages#welcome'
 
-  get :about_us, to: 'static_pages#about_us', as: 'about_us'
-  get :ccwc_story, to: 'static_pages#ccwc_story', as: 'ccwc_story'
+  get :about_us,       to: 'static_pages#about_us',       as: 'about_us'
+  get :advisory_board, to: 'static_pages#advisory_board', as: 'advisory_board'
+  get :ccwc_story,     to: 'static_pages#ccwc_story',     as: 'ccwc_story'
 
   get :exit, to: 'static_pages#exit', as: :exit
 end
