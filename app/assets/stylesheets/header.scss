@@ -1,6 +1,8 @@
+$purple: rgb(113, 44, 93);
+
 #ccwc-header {
   background-color: #F0F0F0;
-  color: purple;
+  color: $purple;
   flex: 0 0 auto;
 
   a {
@@ -10,7 +12,7 @@
 
 .logo-c {
   display: inline-block;
-  color: purple;
+  color: $purple;
 }
 
 .logo-w {
@@ -44,7 +46,7 @@
   padding-top: 1em;
   padding-bottom: 1em;
   background-color: gold;
-  border: 1px solid purple;
+  border: 1px solid $purple;
   border-radius: .25em;
 
   &:hover, &:focus-within {
@@ -59,7 +61,7 @@
 }
 
 .nav-category-title {
-  color: purple;
+  color: $purple;
   font-size: 1.25em;
   font-weight: bold;
 }

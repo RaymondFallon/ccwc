@@ -1,0 +1,18 @@
+
+=image_tag 'our_story.png',
+           class: 'card-img-top text-right col-12 col-md-6 offset-md-3',
+           alt: 'Text Image: Our Story'
+
+= render partial: 'components/card_with_side_image',
+      locals: { image_path: 'ccwc_logo.png',
+                img_right: true,
+                body: ccwc_story_text1 }
+
+= render partial: 'components/card_with_side_image',
+      locals: { image_path: 'ccwc_logo.png',
+                body: ccwc_story_text2 }
+
+= render partial: 'components/card_with_side_image',
+      locals: { image_path: 'ccwc_logo.png',
+                img_right: true,
+                body: ccwc_story_text3 }

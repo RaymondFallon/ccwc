@@ -1,1 +1,20 @@
-%h1 About Us
+%h1.sr-only About Us
+
+-#%h2.bg-purple.text-center Basic Info
+
+.card.border-purple.mb-2
+  .card-header.bg-purple
+    %h2.text-center Basic Info
+  .card-body
+    = render partial: 'components/card_with_side_image',
+      locals: { image_path: 'ccwc_logo.png',
+                body: about_us_text1 }
+
+.card.border-purple.mb-2
+  .card-header.bg-purple
+    %h2.text-center Our Guiding Principles
+  .card-body
+    = render partial: 'components/card_with_side_image',
+      locals: { image_path: 'rainbow_triangle.png',
+                img_right: true,
+                body: about_us_text2 }
