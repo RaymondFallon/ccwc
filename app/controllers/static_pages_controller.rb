@@ -7,6 +7,8 @@ class StaticPagesController < ApplicationController
 
   def ccwc_story; end
 
+  def contact_us; end
+
   def exit
     session[:exited] = true
     session[:expires_at] = 1.minute.from_now
