@@ -2,11 +2,13 @@
         class="flex flex-row flex-wrap justify-content-around align-items-center p-2">
   <a href=<%= root_path %>>
     <div id="ccwc-title">
-      <div class="text-center m-0 pl-2 ultra">
+      <div class="text-center m-0 pl-2 ultra no">
         <%= image_tag('ccwc_logo.png', style: 'max-width:2em;') %>
-        <div class="logo-c inline-block">CC</div>
-        <div class="logo-w inline-block">W</div>
-        <div class="logo-c inline-block">C</div>
+        <div class="flex flex-no-wrap inline-flex">
+          <div class="logo-c inline-block">CC</div>
+          <div class="logo-w inline-block">W</div>
+          <div class="logo-c inline-block">C</div>
+        </div>
       </div>
     </div>
   </a>
