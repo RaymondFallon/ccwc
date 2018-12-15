@@ -3,7 +3,7 @@
   <ul id="main-nav-list"
       class="flex flex-row align-items-center mb-0 mr-2">
     <li class="nav-item-with-dropdown">
-      <a href="#" class="nav-category-title">About Us</a>
+      <div class="nav-category-title" tabindex="0">About Us</div>
       <%= render 'layouts/submenu_dropdown', locals: {
           subcategories: [
             {title: 'Basic Info', anchor: about_us_path },
@@ -15,14 +15,14 @@
       }%>
     </li>
     <li class="nav-item-with-dropdown">
-      <a href="#" class="nav-category-title">Get Informed.</a>
+      <div href="#" class="nav-category-title" tabindex="0">Get Informed.</div>
       <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
           {title: 'Client Rights', anchor: '#'},
           {title: 'Our Publications', anchor: '#'}
       ] }%>
     </li>
     <li class="nav-item-with-dropdown">
-      <a href="#" class="nav-category-title">Get Involved.</a>
+      <div href="#" class="nav-category-title" tabindex="0">Get Involved.</div>
       <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
           {title: 'Dessert Night', anchor: '#'},
           {title: 'Employment', anchor: '#'},
@@ -33,7 +33,7 @@
       ] }%>
     </li>
     <li class="nav-item-with-dropdown">
-      <a href="#" class="nav-category-title">Get Help.</a>
+      <div href="#" class="nav-category-title" tabindex="0">Get Help.</div>
       <%= render 'layouts/submenu_dropdown', locals: {subcategories: [
           {title: '24/7 Hotline', anchor: '#'},
           {title: 'Emergency Safe House', anchor: '#'},

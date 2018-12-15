@@ -3,7 +3,7 @@
   <a href=<%= root_path %>>
     <div id="ccwc-title">
       <div class="text-center m-0 pl-2 ultra no">
-        <%= image_tag('ccwc_logo.png', style: 'max-width:2em;') %>
+        <%= image_tag('ccwc_logo.png', id: 'ccwc-logo-img', style: 'max-width:2em;') %>
         <div class="flex flex-no-wrap inline-flex">
           <div class="logo-c inline-block">CC</div>
           <div class="logo-w inline-block">W</div>
@@ -22,5 +22,11 @@
     </div>
   </div>
 
+  <a id="main-nav-open" class="hidden">
+    <i class="menu-toggle fa fa-2x fa-bars"></i>
+  </a>
+  <a id="main-nav-close" class="hidden">
+    <i class="menu-toggle fa fa-2x fa-close"></i>
+  </a>
   <%= render 'layouts/main_nav' %>
 </header>

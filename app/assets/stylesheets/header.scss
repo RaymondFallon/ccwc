@@ -40,27 +40,17 @@ $purple: rgb(113, 44, 93);
 }
 
 .nav-item-with-dropdown:last-of-type {
-  padding-top: 1em;
-  padding-bottom: 1em;
   background-color: gold;
   border: 1px solid $purple;
   border-radius: .25em;
-
-  &:hover, &:focus-within {
-    background-color: darken(dimgrey, 20%);
-    border-radius: 5px 5px 0 0;
-    border: 0;
-  }
-
-  & .submenu-dropdown {
-    margin-left: -7em !important;
-  }
 }
 
 .nav-category-title {
   color: $purple;
   font-size: 1.25em;
   font-weight: bold;
+  padding: 0 1em;
+  cursor: default;
 }
 
 .submenu-dropdown {
@@ -90,11 +80,6 @@ $purple: rgb(113, 44, 93);
 
   .nav-category-title {
     color: white;
-  }
-
-  .nav-category-title:hover,
-  .nav-category-title:focus-within {
-    color: gold;
   }
 
   & > .submenu-dropdown {
@@ -128,8 +113,17 @@ $purple: rgb(113, 44, 93);
   }
 }
 
-.nav-category-title {
-  padding: 1em;
-  //margin: .5rem 1rem .5rem 1rem;
-  //margin: .5rem;
+@media (max-width: 50em) {
+  #ccwc-subtitles,
+  #ccwc-logo-img {
+    display: none;
+  }
+}
+
+@media (min-width: 50em) {
+  .nav-item-with-dropdown:last-of-type {
+    & .submenu-dropdown {
+      margin-left: -7em !important;
+    }
+  }
 }
